@@ -1,7 +1,7 @@
 let component = ReasonReact.statelessComponent "Button";
 
 let make ::title ::onClick _children => {
-  let click event => onClick title;
+  let click _event => onClick;
   {
     ...component,
     render: fun _self =>
